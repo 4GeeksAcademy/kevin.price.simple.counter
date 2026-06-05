@@ -4,7 +4,6 @@ import { SecondsCounter } from './components/SecondsCounter';
 import '../styles/index.css';
 
 let secondsCounter = 0;
-
 function render() {
     const root = ReactDOM.createRoot(document.querySelector('#app'));
     root.render(
@@ -13,11 +12,9 @@ function render() {
         </div>
     );
 }
-
 window.addEventListener('load', () => {
     render();
 });
-
 setInterval(() => {
     secondsCounter++;
     render();
